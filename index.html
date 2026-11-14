@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nightbrew Studio</title>
+  <meta name="description" content="Nightbrew Studio cria apps para iPhone. Criadora do Cada Fase.">
+  <meta name="theme-color" content="#14111c">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #14111c;
+      --surface: #1d1928;
+      --line: #2c2639;
+      --text: #f3eee6;
+      --muted: #a69fb3;
+      --accent: #e8b46a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font: 400 17px/1.6 Inter, system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a { color: inherit; }
+    .wrap { width: 100%; max-width: 640px; margin: 0 auto; padding: 0 24px; }
+    header { padding: 72px 0 56px; }
+    .mark { display: flex; align-items: center; gap: 12px; margin-bottom: 40px; }
+    .mark svg { width: 36px; height: 36px; }
+    .mark span { font: 600 18px/1 Fraunces, Georgia, serif; letter-spacing: 0.01em; }
+    h1 {
+      font: 500 clamp(32px, 7vw, 44px)/1.15 Fraunces, Georgia, serif;
+      letter-spacing: -0.01em;
+      max-width: 15ch;
+    }
+    .lead { color: var(--muted); margin-top: 20px; max-width: 46ch; }
+    main { flex: 1; }
+    h2 {
+      font: 500 13px/1 Inter, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+    section { margin-bottom: 56px; }
+    .app {
+      display: block;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 24px;
+      text-decoration: none;
+      transition: border-color .2s;
+    }
+    .app:hover { border-color: var(--accent); }
+    .app h3 { font: 600 22px/1.2 Fraunces, Georgia, serif; }
+    .app p { color: var(--muted); margin-top: 8px; }
+    .links { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 16px; font-size: 15px; }
+    .links a { color: var(--accent); text-decoration: none; }
+    .links a:hover { text-decoration: underline; }
+    .contact a { color: var(--accent); text-decoration: none; font-size: 19px; }
+    .contact a:hover { text-decoration: underline; }
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 24px 0 32px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer p + p { margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="mark">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1d1928"/><path d="M38 14a16 16 0 1 0 12 26A13 13 0 1 1 38 14z" fill="#e8b46a"/></svg>
+        <span>Nightbrew Studio</span>
+      </div>
+      <h1>Apps feitos com calma, para a vida que acontece.</h1>
+      <p class="lead">Somos um estúdio independente que cria apps para iPhone. Poucos, bem cuidados, pensados para durar.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section>
+        <h2>Apps</h2>
+        <div class="app">
+          <h3>Cada Fase</h3>
+          <p>Saltos e fases do bebê, explicados semana a semana, para pais de primeira viagem.</p>
+          <div class="links">
+            <a href="https://apps.apple.com/br/app/id6775042827">App Store</a>
+            <a href="https://cadafase.com">cadafase.com</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2>Contato</h2>
+        <a href="mailto:contato@nightbrew.com.br">contato@nightbrew.com.br</a>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Nightbrew Studio LTDA · CNPJ 70.134.063/0001-16</p>
+      <p>Guarulhos, SP, Brasil</p>
+    </div>
+  </footer>
+</body>
+</html>
